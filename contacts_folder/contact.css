@@ -1,14 +1,6 @@
-@font-face {
-  font-family: 'RobotoMono-Regular';
-  src:  url('fonts/RobotoMono-Regular.ttf')
-}
-@font-face {
-  font-family: 'RobotoMono-Bold';
-  src:  url('fonts/RobotoMono-Bold.ttf')
-}
 
 body,html{
-    font-family: 'RobotoMono-Regular', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -21,7 +13,7 @@ body,html{
 }
 
 .bold_thread{
-    font-family: 'RobotoMono-Bold';
+    font-family: 'Roboto Mono', monospace;
 }
 .back_btn{
     display: flex;
