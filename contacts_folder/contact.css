@@ -9,7 +9,7 @@ a{
 
 
 .heading_here{
-    margin: 2rem;
+    margin: 1rem;
     color: #477bfd;
 }
 .main_thread{
@@ -22,11 +22,17 @@ a{
     margin-bottom: 2rem;
     
 }
+.make_it_blue{
+  background-color: #477bfd;
+  border: none;
+
+}
 .go_back{
     color: white;
+    
 }
 .go_back:hover{
-    color: #57b1fe;
+    color: #ffffff;
 }
 
 /* ANIMATION */
@@ -37,39 +43,9 @@ a{
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
   width: 100%;
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: #477bfd;
   font-size: 1rem;
   padding: 15px;
-}
-.gradient-border {
-  --borderWidth: 3px;
-  background: #1D1F20;
-  position: relative;
-  /* border-radius: var(--borderWidth); */
-}
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #57b1fe, #f8d7da, #fb4d3d, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  /* border-radius: calc(2 * var(--borderWidth)); */
-  z-index: -1;
-  animation: animatedgradient 5s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  box-shadow: 7px 5px rgba(0,0,0,.15);
 }
