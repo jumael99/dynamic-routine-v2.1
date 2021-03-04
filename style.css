@@ -28,17 +28,40 @@ body{
 .black_btn,
 .blue_btn,
 .blue_btn_1,
-.funzone_btn{
+.funzone_btn,
+.up_btn{
     margin-top: 15px;
     margin-right: 10px;
     color: white;
     font-family: 'RobotoMono-Regular';
+    font-size:0.8rem;
+    /* shadow */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
 }
 .contactClass{
     color: white;
+    
 }
 .contactClass:hover{
     color: white;
+}
+.contactClass0{
+    margin-top: 15px;
+    background: #F2B25C;
+    border: none;
+    margin-right: 10px;
+    color: white;
+    font-family: 'RobotoMono-Regular';
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
+}
+.contactClass0:hover{
+    background:#e99b34; 
 }
 
 .cyan_btn:hover{
@@ -56,16 +79,30 @@ body{
 .funzone_btn_1:hover{
     color: white;
 }
+/* .up_btn{
+    background:linear-gradient(to right, #DD4A8E, #F85968) ;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
+    box-shadow-color: linear-gradient(to right, #DD4A8E, #F85968) ;
+    transition: 2s;
 
-
-#contact_btn{
-    /* background: linear-gradient(to right, rgb(39, 57, 85), rgb(39,57,85)); */
-    background-color: linear-gradient(to right, rgba(255, 217, 0, 0), rgba(255,0,0,1));
-    margin-top: 15px;
-    margin-right: 10px;
-    color: white;
-    font-family: 'RobotoMono-Regular';
+} */
+.up_btn{
+    background: linear-gradient(-45deg, #DD4A8E, #23a6d5, #23c9d5, #F85968);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
 }
+/* #contact_btn:hover{
+    background:  rgba(242, 177, 92, 0.76; 
+} */
 
 main{
     max-height: 100vh;
@@ -73,11 +110,17 @@ main{
 td{
     font-size: .8rem;
 }
+.dynamic0{
+    background: yellow;
+    height:15px;
+}
 
 .helloguys{
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'RobotoMono-Regular', sans-serif;
+    text-align: center;
+    line-height: 150%;
 }
 
 /* A tags */
@@ -110,42 +153,42 @@ a{
 .created_by_1{
     font-size: 1rem;
 }
+/* Animation */
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
 /* MEDIA QUERY */
-@media only screen and (max-width:378px){
+
+@media only screen and (max-width:450px){
+    
     .cyan_btn,
-    .black-bnt,
-    .blue_btn{
-        width: 5%;
+    .black_btn,
+    .blue_btn,
+    .blue_btn_1,
+    .funzone_btn,
+    .up_btn{
+    max-width: 60%;
     }
     
-}
-
-@media only screen and (max-width:770px){
-    
-    .marqueex{
-    width: 100%;
-}
 
 @media only screen and (max-width:1200px) {
     body,html{
         font-size: 0.8rem;
     }
     
-    .cyan_btn,
-    .black-bnt,
-    .blue_btn{
-        width: 33%;
-    }
+    
     .helloguys{
     text-align: center;
-}
-}
-
-@media only screen and (min-width: 366px) and (max-width: 411px){
-      .three_btn{
-        padding-left: 2rem;
     }
-}}
+}

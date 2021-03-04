@@ -42,3 +42,13 @@ cyan_btn.addEventListener("click", function(){
 blue_btn.addEventListener("click", startTime);
 
 
+// horror
+
+const up_btn = document.querySelector(".up_btn");
+
+up_btn.addEventListener("click", function() {
+  alert("You're Hacked!!!")
+  alert("Just kidding!!")
+  alert("Updated contents will be here soon.")
+})
+
