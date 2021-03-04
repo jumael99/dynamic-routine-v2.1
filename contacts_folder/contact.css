@@ -7,6 +7,11 @@ a{
   text-decoration: none;
 }
 
+/* font changed */
+th, td{
+  font-size: 0.8rem;
+}
+
 
 .heading_here{
     margin: 1rem;
@@ -29,6 +34,7 @@ a{
 }
 .go_back{
     color: white;
+    font-size: 0.8rem;
     
 }
 .go_back:hover{
