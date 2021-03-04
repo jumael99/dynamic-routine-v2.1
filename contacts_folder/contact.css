@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src:  url('/fonts/RobotoMono-Regular.ttf')
+}
+@font-face {
+  font-family: 'RobotoMono-Bold';
+  src:  url('/fonts/RobotoMono-Bold.ttf')
+}
+
+body,html{
+    font-family: 'RobotoMono-Regular', sans-serif;
+}
+
+
+.heading_here{
+    margin: 2rem;
+    color: #477bfd;
+}
+.main_thread{
+    font-size: 1rem;
+}
+
+.bold_thread{
+    font-family: 'RobotoMono-Bold';
+}
+.back_btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    
+}
+.go_back{
+    color: white;
+}
+.go_back:hover{
+    color: #57b1fe;
+}
+
+/* ANIMATION */
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+  color: white;
+  font-family: 'RobotoMono-Regular';
+  font-size: 1rem;
+  padding: 15px;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  /* border-radius: var(--borderWidth); */
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #57b1fe, #f8d7da, #fb4d3d, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  /* border-radius: calc(2 * var(--borderWidth)); */
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+}
+
+.emty_div{
+	margin-top: 1.5rem;
+}
+
+.main__class{
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#firstHeader{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	/* properties */
+	font-size: 2rem;
+	margin:0 0.5rem 0 0.5rem;
+	font-family: 'Space Mono', monospace;
+}
+
+#buttonId{
+	height: 45px;
+	width: 200px;
+	border-left: 2px solid rgb(0, 127, 177);
+	border-radius: 3px;
+	background:linear-gradient(to right, #00A7D5 , #0063DB);
+	color: white;
+	font-weight: 600;
+	margin:1rem;
+	font-family: 'Space Mono', monospace;
+
+}
+
+
+/* @media only screen and (min-width: 500px) {
+	body{
+		background-color: #0063DB;
+	}
+  	.main__class{
+		margin-top: 40rem;
+	}
+} */
