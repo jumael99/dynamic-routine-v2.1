@@ -30,7 +30,7 @@ body{
 .blue_btn_1,
 .funzone_btn,
 .up_btn{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 10px;
     color: white;
     font-family: 'RobotoMono-Regular';
@@ -92,7 +92,7 @@ body{
 
 } */
 .up_btn{
-    background: linear-gradient(-45deg, #DD4A8E, #23a6d5, #23c9d5, #F85968);
+    background: linear-gradient(-45deg, #57444d, #23a6d5, #23c9d5, #F85968);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
     border: none;
@@ -122,6 +122,12 @@ td{
     font-family: 'RobotoMono-Regular', sans-serif;
     text-align: center;
     line-height: 150%;
+}
+.helloguys1{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-family: 'RobotoMono-Regular', sans-serif;
+    text-align: center;
 }
 
 /* A tags */
@@ -166,6 +172,35 @@ a{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.awesome {
+    font-weight: 500;
+    animation: colorchange 5s infinite alternate
+}
+
+@keyframes colorchange {
+      0% {
+        
+        color: #DD4A8E;
+      }
+      
+      
+      50% {
+        
+        color: #23a6d5;
+      }
+      
+      
+      70% {
+        
+        color: #23c9d5;
+      }
+      
+      100% {
+        
+        color: #F85968;
+      }
 }
 
 
