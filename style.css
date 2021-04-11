@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-size: 62.5%;
    
@@ -11,6 +12,7 @@ body{
     font-size: .9rem;
     margin-top: 15px;
     max-height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 @font-face {
@@ -33,7 +35,7 @@ body{
     margin-top: 10px;
     margin-right: 10px;
     color: white;
-    font-family: 'RobotoMono-Regular';
+    font-family: 'Inter', sans-serif;
     font-size:0.8rem;
     /* shadow */
     box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
@@ -50,12 +52,12 @@ body{
     color: white;
 }
 .contactClass0{
-    margin-top: 15px;
+    margin-top: 10px;
     background: #F2B25C;
     border: none;
     margin-right: 10px;
     color: white;
-    font-family: 'RobotoMono-Regular';
+    font-family: 'Inter', sans-serif;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
               0 2px 2px rgba(0,0,0,0.15), 
               0 4px 4px rgba(0,0,0,0.15), 
@@ -101,6 +103,15 @@ body{
               0 4px 4px rgba(0,0,0,0.15), 
               0 8px 8px rgba(0,0,0,0.15);
 }
+
+.programme{
+    text-decoration: none;
+    color: inherit; 
+}
+.programme:hover{
+    text-decoration: none;
+    color: inherit; 
+}
 /* #contact_btn:hover{
     background:  rgba(242, 177, 92, 0.76; 
 } */
@@ -119,15 +130,18 @@ td{
 .helloguys{
     margin-top: 15px;
     font-size: 1.1rem;
-    font-family: 'RobotoMono-Regular', sans-serif;
+    font-family: 'RobotoMono-Regular';
     text-align: center;
-    line-height: 150%;
+    line-height: 160%;
 }
 .helloguys1{
     margin-top: 15px;
     font-size: 1.1rem;
-    font-family: 'RobotoMono-Regular', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
+}
+.theadd{
+    font-family: 'Inter', sans-serif;
 }
 
 /* A tags */
@@ -141,7 +155,7 @@ a{
     height: 200px;
     object-fit: cover;
     background-position: bottom;
-    background: url("photos/seamless\ patter\ \(ready\ to\ launch\).png");
+    background: url("photos/seamless\ patter\ \(ready\ to\ launch\).jpg");
     background-repeat: no-repeat;
     box-shadow: 0 8px 6px -6px black;
 
@@ -155,7 +169,7 @@ a{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1rem;
-    font-family: 'RobotoMono-Regular', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .created_by_1{
     font-size: 1rem;
